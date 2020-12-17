@@ -1,0 +1,129 @@
+buildscript {
+    ext {
+        springBootVersion = '2.2.1.RELEASE'
+    }
+    repositories {
+        mavenCentral()
+        gradlePluginPortal()
+        maven {
+            url "https://plugins.gradle.org/m2/"
+        }
+    }
+    dependencies {
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
+        classpath('io.freefair.gradle:lombok-plugin:3.8.1')
+    }
+}
+
+ext {
+    springCloudVersion = 'Hoxton.RELEASE'
+    artifactory_url = hasProperty('artifactory_url') ? artifactory_url : System.getenv('artifactory_url')
+    artifactory_user = hasProperty('artifactory_user') ? artifactory_user : System.getenv('artifactory_user')
+    artifactory_api_key = hasProperty('artifactory_api_key') ? artifactory_api_key : System.getenv('artifactory_api_key')
+    artifactory_repo_key = hasProperty('artifactory_repo_key') ? artifactory_repo_key : System.getenv('artifactory_repo_key')
+}
+
+allprojects {
+    apply plugin: 'java'
+    apply plugin: 'eclipse'
+    apply plugin: 'org.springframework.boot'
+    apply plugin: 'io.spring.dependency-management'
+    apply plugin: 'io.freefair.lombok'
+
+    group = 'com.ibm.ram.guards'
+<<<<<<< HEAD
+<<<<<<< HEAD
+    version = '0.0.1-beta'
+=======
+    version = '2.0.12-beta'
+>>>>>>> 30c2c67... init commit
+=======
+    version = '0.0.1-beta'
+>>>>>>> 9f39b6d... publish
+    sourceCompatibility = 1.8
+
+    repositories {
+        mavenCentral()
+        maven { url "https://repo.spring.io/milestone" }
+    }
+
+    dependencyManagement {
+        imports {
+            mavenBom "org.springframework.cloud:spring-cloud-dependencies:${springCloudVersion}"
+        }
+        dependencies {
+            dependency 'junit:junit:4.12'
+            dependency 'io.projectreactor:reactor-core:3.3.0.RELEASE'
+            dependency 'org.bouncycastle:bcprov-jdk15on:1.60'
+            dependency 'com.nimbusds:nimbus-jose-jwt:6.0.2'
+            dependency 'org.projectlombok:lombok:1.18.4'
+            dependency 'commons-codec:commons-codec:1.11'
+            dependency 'org.apache.commons:commons-lang3:3.8.1'
+            dependency 'com.google.guava:guava:26.0-jre'
+            dependency 'org.springframework.security.oauth:spring-security-oauth2:2.3.4.RELEASE'
+            dependency 'org.springframework.security.oauth.boot:spring-security-oauth2-autoconfigure:2.1.1.RELEASE'
+            dependency 'org.springframework.security:spring-security-jwt:1.0.9.RELEASE'
+            dependencySet(group:'org.springframework.security', version: '5.1.2.RELEASE') {
+                entry 'spring-security-oauth2'
+                entry 'spring-security-oauth2-core'
+                entry 'spring-security-oauth2-jose'
+                entry 'spring-security-oauth2-client'
+                entry 'spring-security-oauth2-resource-server'
+                entry 'spring-security-core'
+                entry 'spring-security-config'
+                entry 'spring-security-web'
+                entry 'spring-security-crypto'
+                entry 'spring-security-openid'
+            }
+            dependencySet(group:'com.fasterxml.jackson.core', version: '2.10.0') {
+                entry 'jackson-core'
+                entry 'jackson-databind'
+                entry 'jackson-annotations'
+            }
+            dependencySet(group:'io.github.openfeign', version: '10.4.0') {
+                entry 'feign-core'
+                entry 'feign-jackson'
+            }
+        }
+    }
+
+    task allDeps(type: DependencyReportTask) {
+        outputFile = file("dependency.txt")
+    }
+
+    jar {
+        enabled = true
+    }
+
+    bootJar{
+        enabled = false
+    }
+
+}
+
+task publishToJfrog(dependsOn: [
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 9f39b6d... publish
+        'ibmid-resource-server-spring-boot-starter:publish',
+        'ibmid-client-spring-boot-starter:publish',
+        'ram-guards-authorization-server-spring-boot-starter:publish',
+        'ram-guards-entity:publish',
+        'ram-guards-helper:publish',
+        'ram-guards-resource-server-spring-boot-starter:publish',
+        'ram-guards-zuul-esw-provider-spring-cloud-starter:publish'
+<<<<<<< HEAD
+=======
+        'ibmid-resource-server-spring-boot-starter:artifactoryPublish',
+        'ibmid-client-spring-boot-starter:artifactoryPublish',
+        'ram-guards-authorization-server-spring-boot-starter:artifactoryPublish',
+        'ram-guards-entity:artifactoryPublish',
+        'ram-guards-helper:artifactoryPublish',
+        'ram-guards-resource-server-spring-boot-starter:artifactoryPublish',
+        'ram-guards-zuul-esw-provider-spring-cloud-starter:artifactoryPublish'
+>>>>>>> 30c2c67... init commit
+=======
+>>>>>>> 9f39b6d... publish
+])
+

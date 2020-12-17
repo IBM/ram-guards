@@ -1,0 +1,22 @@
+server:
+  port: 8762
+
+spring:
+  application:
+    name: service-hi
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+
+logging:
+  level:
+    root: debug
+
+ram-guards:
+  resource-server:
+    client-id: xxx
+    client-secret: xxx
+    system-partners:
+      - xxx

@@ -1,0 +1,28 @@
+server:
+  port: 8766
+
+eureka:
+  client:
+    enabled: false
+
+logging:
+  level:
+    ROOT: info
+
+ram-guards:
+  authorization-server:
+    client-id: danube-zuul
+    client-secret: LwitblTK4KgOInkWh/0bpsFjdxdM8sguAVtA0eLG0fI=
+    default-password: default-password
+    token-ttl: 3600
+    enable-redis-cache: false
+    system-partners:
+      - OWNiNzU1OTctMzAwOC00
+    esw-provider:
+      enabled: true
+      url: https://ramws-test.esw.origins.ibm.net/software/shopzseries/ramwebservices/rest/userrole/
+      username: shopzuser@cn.ibm.com
+      password: 9x4jVc53WBYs6/ChxcUT2h5yEApOGPhicU8JHPeYqMs=
+      application-id: 3
+      system-partner-function-id:
+        OWNiNzU1OTctMzAwOC00: shopzaaa@cn.ibm.com

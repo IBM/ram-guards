@@ -1,0 +1,16 @@
+apply from: 'artifacts.gradle'
+dependencies {
+    compile project(':ram-guards-helper')
+    compile('io.projectreactor:reactor-core')
+    compile('org.bouncycastle:bcprov-jdk15on')
+    compile('org.springframework.boot:spring-boot-starter-web')
+    compile('org.springframework.boot:spring-boot-starter-webflux')
+    compile('org.springframework.boot:spring-boot-starter-security')
+    compile('org.springframework.security.oauth:spring-security-oauth2')
+    compile('org.springframework.security:spring-security-jwt')
+    compile('org.springframework.security:spring-security-oauth2-jose')
+    compile('com.google.guava:guava')
+    compileOnly('org.projectlombok:lombok')
+    compileOnly('org.springframework.boot:spring-boot-configuration-processor')
+    testCompile('org.springframework.boot:spring-boot-starter-test')
+}

@@ -1,0 +1,9 @@
+apply from: 'artifacts.gradle'
+dependencies {
+    compile project(':ram-guards-entity')
+    compile('com.nimbusds:nimbus-jose-jwt')
+    compile('org.bouncycastle:bcprov-jdk15on')
+    compile('com.fasterxml.jackson.core:jackson-core')
+    compile('com.fasterxml.jackson.core:jackson-databind')
+    compile('com.fasterxml.jackson.core:jackson-annotations')
+}

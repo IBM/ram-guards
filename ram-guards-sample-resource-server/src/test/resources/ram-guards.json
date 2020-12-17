@@ -1,0 +1,420 @@
+{
+  "aud": "danube-zuul",
+  "sub": "WEBID:a728976009@gmail.com",
+  "grant_type": "password",
+  "user_name": "WEBID:a728976009@gmail.com",
+  "scope": [
+    "authority",
+    "detail",
+    "role"
+  ],
+  "jti": "3522a94d-f76d-4139-9d76-be877fafac11",
+  "client_id": "danube-zuul",
+  "authorities": [
+    {
+      "id": 5,
+      "name": "CONF_ORDER",
+      "roles": [
+        {
+          "id": 200,
+          "name": "IBM Z Software Sales",
+          "details": [
+            {
+              "@class": "com.ibm.ram.guards.entity.provider.esw.EswAppRoleDetail",
+              "customerTypeId": 0,
+              "countries": [
+                {
+                  "isoCountryName": "US"
+                }
+              ]
+            },
+            {
+              "@class": "com.ibm.ram.guards.entity.provider.esw.EswAppRoleDetail",
+              "customerTypeId": 1,
+              "countries": [
+                {
+                  "isoCountryName": "CN"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 210,
+          "name": "zMLC representative",
+          "details": [
+            {
+              "@class": "com.ibm.ram.guards.entity.provider.esw.EswAppRoleDetail",
+              "customerTypeId": 0,
+              "countries": [
+                {
+                  "isoCountryName": "US"
+                }
+              ]
+            },
+            {
+              "@class": "com.ibm.ram.guards.entity.provider.esw.EswAppRoleDetail",
+              "customerTypeId": 1,
+              "countries": [
+                {
+                  "isoCountryName": "CN"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "PRICE",
+      "roles": [
+        {
+          "id": 200,
+          "name": "IBM Z Software Sales",
+          "details": [
+            {
+              "@class": "com.ibm.ram.guards.entity.provider.esw.EswAppRoleDetail",
+              "customerTypeId": 0,
+              "countries": [
+                {
+                  "isoCountryName": "US"
+                }
+              ]
+            },
+            {
+              "@class": "com.ibm.ram.guards.entity.provider.esw.EswAppRoleDetail",
+              "customerTypeId": 1,
+              "countries": [
+                {
+                  "isoCountryName": "CN"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 210,
+          "name": "zMLC representative",
+          "details": [
+            {
+              "@class": "com.ibm.ram.guards.entity.provider.esw.EswAppRoleDetail",
+              "customerTypeId": 0,
+              "countries": [
+                {
+                  "isoCountryName": "US"
+                }
+              ]
+            },
+            {
+              "@class": "com.ibm.ram.guards.entity.provider.esw.EswAppRoleDetail",
+              "customerTypeId": 1,
+              "countries": [
+                {
+                  "isoCountryName": "CN"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "INVENTORY",
+      "roles": [
+        {
+          "id": 200,
+          "name": "IBM Z Software Sales",
+          "details": [
+            {
+              "@class": "com.ibm.ram.guards.entity.provider.esw.EswAppRoleDetail",
+              "customerTypeId": 0,
+              "countries": [
+                {
+                  "isoCountryName": "US"
+                }
+              ]
+            },
+            {
+              "@class": "com.ibm.ram.guards.entity.provider.esw.EswAppRoleDetail",
+              "customerTypeId": 1,
+              "countries": [
+                {
+                  "isoCountryName": "CN"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 210,
+          "name": "zMLC representative",
+          "details": [
+            {
+              "@class": "com.ibm.ram.guards.entity.provider.esw.EswAppRoleDetail",
+              "customerTypeId": 0,
+              "countries": [
+                {
+                  "isoCountryName": "US"
+                }
+              ]
+            },
+            {
+              "@class": "com.ibm.ram.guards.entity.provider.esw.EswAppRoleDetail",
+              "customerTypeId": 1,
+              "countries": [
+                {
+                  "isoCountryName": "CN"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "ORDER",
+      "roles": [
+        {
+          "id": 200,
+          "name": "IBM Z Software Sales",
+          "details": [
+            {
+              "@class": "com.ibm.ram.guards.entity.provider.esw.EswAppRoleDetail",
+              "customerTypeId": 0,
+              "countries": [
+                {
+                  "isoCountryName": "US"
+                }
+              ]
+            },
+            {
+              "@class": "com.ibm.ram.guards.entity.provider.esw.EswAppRoleDetail",
+              "customerTypeId": 1,
+              "countries": [
+                {
+                  "isoCountryName": "CN"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 210,
+          "name": "zMLC representative",
+          "details": [
+            {
+              "@class": "com.ibm.ram.guards.entity.provider.esw.EswAppRoleDetail",
+              "customerTypeId": 0,
+              "countries": [
+                {
+                  "isoCountryName": "US"
+                }
+              ]
+            },
+            {
+              "@class": "com.ibm.ram.guards.entity.provider.esw.EswAppRoleDetail",
+              "customerTypeId": 1,
+              "countries": [
+                {
+                  "isoCountryName": "CN"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "name": "DANUBE",
+      "roles": [
+        {
+          "id": 200,
+          "name": "IBM Z Software Sales",
+          "details": [
+            {
+              "@class": "com.ibm.ram.guards.entity.provider.esw.EswAppRoleDetail",
+              "customerTypeId": 0,
+              "countries": [
+                {
+                  "isoCountryName": "US"
+                }
+              ]
+            },
+            {
+              "@class": "com.ibm.ram.guards.entity.provider.esw.EswAppRoleDetail",
+              "customerTypeId": 1,
+              "countries": [
+                {
+                  "isoCountryName": "CN"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 210,
+          "name": "zMLC representative",
+          "details": [
+            {
+              "@class": "com.ibm.ram.guards.entity.provider.esw.EswAppRoleDetail",
+              "customerTypeId": 0,
+              "countries": [
+                {
+                  "isoCountryName": "US"
+                }
+              ]
+            },
+            {
+              "@class": "com.ibm.ram.guards.entity.provider.esw.EswAppRoleDetail",
+              "customerTypeId": 1,
+              "countries": [
+                {
+                  "isoCountryName": "CN"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "CONF_ORDER",
+      "roles": [
+        {
+          "id": 10,
+          "name": null,
+          "details": [
+            {
+              "@class": "com.ibm.ram.guards.entity.provider.esw.EswGroupRoleDetail",
+              "customerTypeId": 1,
+              "eswCountry": {
+                "isoCountryName": "CN"
+              },
+              "eswCustomers": [
+                {
+                  "companyName": "IBM CORP",
+                  "customerNumber": "6641542",
+                  "customerIbmLegacyCountryCode": "CN"
+                }
+              ],
+              "active": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "PRICE",
+      "roles": [
+        {
+          "id": 10,
+          "name": null,
+          "details": [
+            {
+              "@class": "com.ibm.ram.guards.entity.provider.esw.EswGroupRoleDetail",
+              "customerTypeId": 1,
+              "eswCountry": {
+                "isoCountryName": "CN"
+              },
+              "eswCustomers": [
+                {
+                  "companyName": "IBM CORP",
+                  "customerNumber": "6641542",
+                  "customerIbmLegacyCountryCode": "CN"
+                }
+              ],
+              "active": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "INVENTORY",
+      "roles": [
+        {
+          "id": 10,
+          "name": null,
+          "details": [
+            {
+              "@class": "com.ibm.ram.guards.entity.provider.esw.EswGroupRoleDetail",
+              "customerTypeId": 1,
+              "eswCountry": {
+                "isoCountryName": "CN"
+              },
+              "eswCustomers": [
+                {
+                  "companyName": "IBM CORP",
+                  "customerNumber": "6641542",
+                  "customerIbmLegacyCountryCode": "CN"
+                }
+              ],
+              "active": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "ORDER",
+      "roles": [
+        {
+          "id": 10,
+          "name": null,
+          "details": [
+            {
+              "@class": "com.ibm.ram.guards.entity.provider.esw.EswGroupRoleDetail",
+              "customerTypeId": 1,
+              "eswCountry": {
+                "isoCountryName": "CN"
+              },
+              "eswCustomers": [
+                {
+                  "companyName": "IBM CORP",
+                  "customerNumber": "6641542",
+                  "customerIbmLegacyCountryCode": "CN"
+                }
+              ],
+              "active": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "name": "DANUBE",
+      "roles": [
+        {
+          "id": 10,
+          "name": null,
+          "details": [
+            {
+              "@class": "com.ibm.ram.guards.entity.provider.esw.EswGroupRoleDetail",
+              "customerTypeId": 1,
+              "eswCountry": {
+                "isoCountryName": "CN"
+              },
+              "eswCustomers": [
+                {
+                  "companyName": "IBM CORP",
+                  "customerNumber": "6641542",
+                  "customerIbmLegacyCountryCode": "CN"
+                }
+              ],
+              "active": true
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+<<<<<<< HEAD
+<<<<<<< HEAD
+apply plugin: "maven-publish"
+
+publishing {
+    repositories {
+        maven {
+            name = "GitHubPackages"
+            url = uri("https://maven.pkg.github.com/IBM/ram-guards")
+            credentials {
+                username = project.findProperty("gpr.user") ?: System.getenv("USERNAME")
+                password = project.findProperty("gpr.key") ?: System.getenv("TOKEN")
+            }
+        }
+    }
+    publications {
+        gpr(MavenPublication) {
+            from(components.java)
+        }
+    }
+}
+=======
+buildscript {
+    repositories {
+        jcenter()
+    }
+    dependencies {
+        //Check for the latest version here: http://plugins.gradle.org/plugin/com.jfrog.artifactory
+        classpath "org.jfrog.buildinfo:build-info-extractor-gradle:4.7.5"
+    }
+}
+
+apply plugin: org.jfrog.gradle.plugin.artifactory.ArtifactoryPlugin
+=======
+>>>>>>> 9f39b6d... publish
+apply plugin: "maven-publish"
+
+publishing {
+    repositories {
+        maven {
+            name = "GitHubPackages"
+            url = uri("https://maven.pkg.github.com/IBM/ram-guards")
+            credentials {
+                username = project.findProperty("gpr.user") ?: System.getenv("USERNAME")
+                password = project.findProperty("gpr.key") ?: System.getenv("TOKEN")
+            }
+        }
+    }
+    publications {
+        gpr(MavenPublication) {
+            from(components.java)
+        }
+    }
+}
+<<<<<<< HEAD
+
+>>>>>>> 30c2c67... init commit
+=======
+>>>>>>> 9f39b6d... publish

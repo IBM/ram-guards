@@ -1,0 +1,27 @@
+server:
+  port: 8766
+
+spring:
+  redis:
+    host: localhost
+    port: 6379
+  application:
+    name: service-authorize
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+logging:
+  level:
+    root: debug
+
+ram-guards:
+  authorization-server:
+    client-id: xxx
+    client-secret: xxx
+    default-password: xxx
+    token-ttl: 3600
+    enable-redis-cache: true
+    system-partners:
+      - xxx

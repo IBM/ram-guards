@@ -1,0 +1,16 @@
+dependencies {
+    compile project(":ibmid-resource-server-spring-boot-starter")
+    compile project(":ram-guards-zuul-esw-provider-spring-cloud-starter")
+    implementation('org.springframework.cloud:spring-cloud-starter-netflix-eureka-server')
+    implementation('org.springframework.cloud:spring-cloud-starter-netflix-zuul')
+    compileOnly('org.projectlombok:lombok')
+    testCompile('org.springframework.boot:spring-boot-starter-test')
+}
+
+bootJar {
+    enabled = true
+}
+
+bootJar {
+    classifier = 'boot'
+}

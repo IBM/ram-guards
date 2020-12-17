@@ -1,0 +1,17 @@
+apply from: 'artifacts.gradle'
+dependencies {
+    compile project(':ram-guards-entity')
+    compile project(':ram-guards-helper')
+    compile('org.springframework.boot:spring-boot-starter-web')
+    compile('org.springframework.boot:spring-boot-starter-data-redis')
+    compile('org.springframework.security.oauth:spring-security-oauth2')
+    compile('org.springframework.security:spring-security-oauth2-core')
+    compile('org.springframework.security:spring-security-oauth2-jose')
+    compile('org.springframework.security:spring-security-jwt')
+    compile('io.github.openfeign:feign-core')
+    compile('io.github.openfeign:feign-jackson')
+    compile('com.google.guava:guava')
+    compileOnly('org.projectlombok:lombok')
+    testCompile('org.springframework.boot:spring-boot-starter-test')
+    compileOnly('org.springframework.boot:spring-boot-configuration-processor')
+}

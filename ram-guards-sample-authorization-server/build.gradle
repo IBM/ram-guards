@@ -1,0 +1,13 @@
+dependencies {
+    compile project(':ram-guards-authorization-server-spring-boot-starter')
+    implementation('org.springframework.cloud:spring-cloud-starter-netflix-eureka-server')
+    testCompile('org.springframework.boot:spring-boot-starter-test')
+}
+
+bootJar {
+    enabled = true
+}
+
+bootJar {
+    classifier = 'boot'
+}

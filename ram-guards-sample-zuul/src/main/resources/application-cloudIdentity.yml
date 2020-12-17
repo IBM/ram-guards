@@ -1,0 +1,42 @@
+ibm-id:
+  resource-server:
+    jwk-set-endpoint: https://prepiam.ice.ibmcloud.com/oidc/endpoint/default/jwks
+    client-id: xxx
+    client-secret: xxx
+    token-introspection-endpoint: https://prepiam.ice.ibmcloud.com/oidc/endpoint/default/introspect
+    system-partners:
+      - xxx
+ram-guards:
+  authorization-server:
+    client-id: xxx
+    client-secret: xxx
+    default-password: xxx
+  zuul:
+    authorization-server-service-id: service-authorize
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+server:
+  port: 8769
+logging:
+  level:
+    root: debug
+spring:
+  application:
+    name: service-zuul
+zuul:
+  routes:
+    authorize:
+      path: /authorize/**
+      serviceId: service-authorize
+      sensitiveHeaders: Cookie,Set-Cookie
+    client:
+      path: /client/**
+      serviceId: service-hi
+      sensitiveHeaders: Cookie,Set-Cookie
+ribbon:
+  ReadTimeout: 120000
+  ConnectTimeout: 12000
+

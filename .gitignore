@@ -1,0 +1,16 @@
+.gradle/
+.idea/
+out/
+**/out/
+build
+**/build/
+.vscode/
+bin/
+**/bin/
+**/.classpath
+**/.project
+**/.settings/
+gradle.properties
+dependency.txt
+**/dependency.txt
+**/lombok.config

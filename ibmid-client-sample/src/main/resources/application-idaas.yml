@@ -1,0 +1,21 @@
+ibm-id:
+  client:
+    client-id: xxx
+    client-secret: xxx
+    authorization-uri: https://prepiam.toronto.ca.ibm.com/idaas/oidc/endpoint/default/authorize
+    token-uri: https://prepiam.toronto.ca.ibm.com/idaas/oidc/endpoint/default/token
+    redirect-uri: https://localhost:9876/login
+    jwk-certificate-path: /IBM-ID-JWK-CERT/prepiam_toronto_ca_ibm_com.crt
+logging:
+  level:
+    org.springframework.security: DEBUG
+    org.springframework.http: DEBUG
+    org.springframework.web: DEBUG
+
+server:
+  port: 9876
+  ssl:
+    key-store: /Users/seanyu/springCloudLearning/oidc/src/main/resources/keystore.p12
+    key-store-password: 1234qwer
+    key-store-type: PKCS12
+    key-alias: tomcat

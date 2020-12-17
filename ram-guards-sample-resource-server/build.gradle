@@ -1,0 +1,14 @@
+dependencies {
+    implementation('org.springframework.cloud:spring-cloud-starter-netflix-eureka-client')
+    compile project(':ram-guards-resource-server-spring-boot-starter')
+    compileOnly('org.projectlombok:lombok')
+    testCompile('org.springframework.boot:spring-boot-starter-test')
+}
+
+bootJar {
+    enabled = true
+}
+
+bootJar {
+    classifier = 'boot'
+}

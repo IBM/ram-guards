@@ -1,0 +1,9 @@
+apply from: 'artifacts.gradle'
+dependencies {
+    compile('com.fasterxml.jackson.core:jackson-core')
+    compile('com.fasterxml.jackson.core:jackson-databind')
+    compile('com.fasterxml.jackson.core:jackson-annotations')
+    compile('org.springframework.security:spring-security-core')
+    compileOnly('org.projectlombok:lombok')
+    testCompile('org.springframework.boot:spring-boot-starter-test')
+}

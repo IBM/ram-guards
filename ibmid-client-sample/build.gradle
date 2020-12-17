@@ -1,0 +1,13 @@
+dependencies {
+    compile project(':ibmid-client-spring-boot-starter')
+    compileOnly('org.projectlombok:lombok')
+    testImplementation('org.springframework.boot:spring-boot-starter-test')
+}
+
+bootJar {
+    enabled = true
+}
+
+bootJar {
+    classifier = 'boot'
+}

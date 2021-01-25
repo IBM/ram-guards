@@ -31,15 +31,7 @@ allprojects {
     apply plugin: 'io.freefair.lombok'
 
     group = 'com.ibm.ram.guards'
-<<<<<<< HEAD
-<<<<<<< HEAD
     version = '0.0.1-beta'
-=======
-    version = '2.0.12-beta'
->>>>>>> 30c2c67... init commit
-=======
-    version = '0.0.1-beta'
->>>>>>> 9f39b6d... publish
     sourceCompatibility = 1.8
 
     repositories {
@@ -102,10 +94,6 @@ allprojects {
 }
 
 task publishToJfrog(dependsOn: [
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 9f39b6d... publish
         'ibmid-resource-server-spring-boot-starter:publish',
         'ibmid-client-spring-boot-starter:publish',
         'ram-guards-authorization-server-spring-boot-starter:publish',
@@ -113,17 +101,5 @@ task publishToJfrog(dependsOn: [
         'ram-guards-helper:publish',
         'ram-guards-resource-server-spring-boot-starter:publish',
         'ram-guards-zuul-esw-provider-spring-cloud-starter:publish'
-<<<<<<< HEAD
-=======
-        'ibmid-resource-server-spring-boot-starter:artifactoryPublish',
-        'ibmid-client-spring-boot-starter:artifactoryPublish',
-        'ram-guards-authorization-server-spring-boot-starter:artifactoryPublish',
-        'ram-guards-entity:artifactoryPublish',
-        'ram-guards-helper:artifactoryPublish',
-        'ram-guards-resource-server-spring-boot-starter:artifactoryPublish',
-        'ram-guards-zuul-esw-provider-spring-cloud-starter:artifactoryPublish'
->>>>>>> 30c2c67... init commit
-=======
->>>>>>> 9f39b6d... publish
 ])
 

@@ -2,15 +2,7 @@
 
 :full_moon_with_face: Resource Access Management --- Grant User Authorities-Roles-Details Service :new_moon_with_face:
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 based on this: http://seanthefish.com/2020/07/24/micro-service-authorization/index.html
-=======
-[![Build Status](https://travis.ibm.com/Entitled-Software-LicenseConfigurator/RAM-GUARDS.svg?token=oHkbp3XwpaspFfNojSzj&branch=master)](https://travis.ibm.com/Entitled-Software-LicenseConfigurator/RAM-GUARDS)
->>>>>>> 30c2c67... init commit
-=======
-based on this: http://seanthefish.com/2020/07/24/micro-service-authorization/index.html
->>>>>>> 6aa1872... Update README.md
 
 ## Overview
 
@@ -105,14 +97,4 @@ Header: Authorization: Bearer {ibm_id_id_token_here}
         Ram-Guards: {RAM_GUARDS_access_token_here}
 ```
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 ## see the ppt inside to get more info
-=======
-## A brief structure diagram of RAM-GUARDS in spring cloud micro service framework
-
-![A brief structure diagram](https://ws3.sinaimg.cn/large/006tNbRwly1fxnw84eo38j318c0fw45a.jpg)
->>>>>>> 30c2c67... init commit
-=======
-## see the ppt inside to get more info
->>>>>>> 6aa1872... Update README.md

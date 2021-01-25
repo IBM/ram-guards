@@ -8,8 +8,6 @@
 repositories {
     mavenCentral()
     maven { url "https://repo.spring.io/milestone" }
-<<<<<<< HEAD
-<<<<<<< HEAD
 }
 
 dependencies {
@@ -17,82 +15,7 @@ dependencies {
 }
 ```
 
-=======
-    maven {
-        url "https://na.artifactory.swg-devops.com/artifactory/eswchina-generic-local"
-        credentials {
-            username = "${artifactory_user}"
-            password = "${artifactory_api_key}"
-        }
-    }
-=======
->>>>>>> 73cc997... modify readme
-}
 
-dependencies {
-    compile('com.ibm.ram.guards:ram-guards-authorization-server-spring-boot-starter:0.0.1-beta')
-}
-```
-
-<<<<<<< HEAD
-### Add dependency using Maven
-
-First add `settings.xml` in your local maven user’s install: `${user.home}/.m2/settings.xml`
-
-```xml
-<settings xmlns="http://maven.apache.org/SETTINGS/1.0.0"
-          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-          xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0
-                          https://maven.apache.org/xsd/settings-1.0.0.xsd">
-    <servers>
-        <server>
-            <id>eswchina-generic-local</id>
-            <username>${artifactory_user}</username>
-            <password>${artifactory_api_key}</password>
-        </server>
-    </servers>
-    <profiles>
-        <profile>
-            <repositories>
-                <repository>
-                    <id>eswchina-generic-local</id>
-                    <name>eswchina generic local</name>
-                    <url>https://na.artifactory.swg-devops.com/artifactory/eswchina-generic-local</url>
-                    <snapshots>
-                        <enabled>false</enabled>
-                    </snapshots>
-                </repository>
-            </repositories>
-        </profile>
-    </profiles>
-</settings>
-```
-
-Then modify your `pom.xml`
-
-```xml
-</dependencies>
-    <dependency>
-        <groupId>com.ibm.ram.guards</groupId>
-        <artifactId>ram-guards-authorization-server-spring-boot-starter</artifactId>
-        <version>2.0.12-beta</version>
-    </dependency>
-</dependencies>
-<repositories>
-    <repository>
-        <id>eswchina-generic-local</id>
-        <name>eswchina generic local</name>
-        <url>https://na.artifactory.swg-devops.com/artifactory/eswchina-generic-local</url>
-        <snapshots>
-            <enabled>false</enabled>
-        </snapshots>
-    </repository>
-</repositories>
-```
-
->>>>>>> 30c2c67... init commit
-=======
->>>>>>> 73cc997... modify readme
 ### Add configuration in application.yml
 
 if you don't need cache your user' resource info in redis:
